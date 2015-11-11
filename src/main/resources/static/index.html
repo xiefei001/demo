@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello AngularJS</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body ng-app="hello">
+<div class="container">
+    <h1>Greeting</h1>
+    <div ng-controller="Home as home" ng-cloak class="ng-cloak">
+        <p>The ID is {{home.greeting.id}}</p>
+
+        <p>The content is {{home.greeting.content}}</p>
+    </div>
+</div>
+<script src="js/angular.js"></script>
+</body>
+</html>
