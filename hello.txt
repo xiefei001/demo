@@ -2,4 +2,8 @@ test file.
 geaendert.
 feature_1 geaender.
 
+<<<<<<< HEAD
 aaaaaaaaaaaaaaaaaaaa
+=======
+demo_1 ändert die datei.
+>>>>>>> 5942780e54b3da663d6c1c20937111072bd60e94
