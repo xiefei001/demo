@@ -20,6 +20,7 @@ public class DemoApplication {
 		Map<String, String> model = new HashMap<String, String>();
 		model.put("id", UUID.randomUUID().toString());
 		model.put("content", "Hello World");
+		System.out.println("test output");
 		return model;
 	}
 
