@@ -47,4 +47,13 @@ entry components because Angular adds components listed in @NgModule.bootstrap a
 entry components automatically. Though these two mechanisms account for most entry components, if your app happens 
 to bootstrap or dynamically load a component by type imperatively, you must add it to entryComponents explicitly.
 
+### Tree shaker
+the Angular compiler only generates code for components which are reachable from the entryComponents; This means that adding more references to @NgModule.declarations does not imply that they will necessarily be included in the final bundle.
+
+In fact, many libraries declare and export components you'll never use. For the ones you don't reference, the tree 
+shaker drops these components from the final code package. If a component isn't an entry component and isn't found in a template, the tree shaker will throw it away. 
+
+
+
+
 
