@@ -35,3 +35,16 @@ const routes: Routes = [
   }
 ];
 ```
+
+A route definition refers to a component by its type with component: _CustomerListComponent_.
+
+All router components must be entry components. Because this would require you to add the component in two places 
+(router and entryComponents) the Compiler is smart enough to recognize that this is a router definition and 
+automatically add the router component into entryComponents.
+
+Though the @NgModule decorator has an entryComponents array, most of the time you won't have to explicitly set any 
+entry components because Angular adds components listed in @NgModule.bootstrap and those in route definitions to 
+entry components automatically. Though these two mechanisms account for most entry components, if your app happens 
+to bootstrap or dynamically load a component by type imperatively, you must add it to entryComponents explicitly.
+
+
