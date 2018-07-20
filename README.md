@@ -7,5 +7,20 @@ by bootstrapping it in an NgModule, or including it in a routing definition.
 The following is an example of specifying a bootstrapped component, AppComponent, in a basic app.module.ts:
 
 
+```javascript
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent] // bootstrapped entry component
+})
+```
 
-
+dfdf
